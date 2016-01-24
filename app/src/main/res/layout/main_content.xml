@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.hyochan.godlotto.MainActivity"
+    tools:showIn="@layout/main_app_bar">
+
+    <LinearLayout
+        android:id="@+id/lin_roll"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <org.hyochan.godlotto.utils.android.RollingItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/roll_item_1" />
+        <org.hyochan.godlotto.utils.android.RollingItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/roll_item_2" />
+        <org.hyochan.godlotto.utils.android.RollingItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/roll_item_3" />
+        <org.hyochan.godlotto.utils.android.RollingItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/roll_item_4" />
+        <org.hyochan.godlotto.utils.android.RollingItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/roll_item_5" />
+        <org.hyochan.godlotto.utils.android.RollingItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/roll_item_6" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_roll"
+        android:background="@drawable/btn_primary"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/lin_roll"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:textSize="15.3sp"
+        android:text="@string/btn_roll_number" />
+</RelativeLayout>

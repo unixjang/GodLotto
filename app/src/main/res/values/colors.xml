@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#253541</color>
+    <color name="colorPrimaryDark">#2F3D48</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- button colors -->
+    <!-- default -->
+    <color name="btn_default_n">#FFFFFF</color>
+    <color name="btn_default_n_stroke">#D9D9D9</color>
+    <color name="btn_default_s">#E6E6E6</color>
+    <color name="btn_default_s_stroke">#C1C1C1</color>
+    <!-- primary -->
+    <color name="btn_primary_n">#337AB7</color>
+    <color name="btn_primary_n_stroke">#3875AA</color>
+    <color name="btn_primary_s">#27608D</color>
+    <color name="btn_primary_s_stroke">#2A5170</color>
+    <!-- success -->
+    <color name="btn_success_n">#5CB857</color>
+    <color name="btn_success_n_stroke">#4CAE4C</color>
+    <color name="btn_success_s">#449C48</color>
+    <color name="btn_success_s_stroke">#468147</color>
+    <!-- info -->
+    <color name="btn_info_n">#5BC0DE</color>
+    <color name="btn_info_n_stroke">#49B8DB</color>
+    <color name="btn_info_s">#37ABDE</color>
+    <color name="btn_info_s_stroke">#399FB5</color>
+    <!-- warning -->
+    <color name="btn_warning_n">#F0AD4E</color>
+    <color name="btn_warning_n_stroke">#EEA237</color>
+    <color name="btn_warning_s">#EC9720</color>
+    <color name="btn_warning_s_stroke">#C08C36</color>
+    <!-- danger -->
+    <color name="btn_danger_n">#D9534F</color>
+    <color name="btn_danger_n_stroke">#D43F3A</color>
+    <color name="btn_danger_s">#C9302B</color>
+    <color name="btn_danger_s_stroke">#923231</color>
+
+
+</resources>

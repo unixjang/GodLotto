@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">로또의 신</string>
+    <string name="app_description">로또 정밀 분석 이제 시작하세요.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">설정</string>
+    <string name="btn_roll_number">로또 번호 추출하기</string>
+</resources>

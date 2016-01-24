@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_table"
+            android:icon="@drawable/ic_table"
+            android:title="저장한 번호" />
+        <item
+            android:id="@+id/nav_match"
+            android:icon="@drawable/ic_match"
+            android:title="결과 확인" />
+        <item
+            android:id="@+id/nav_analyze"
+            android:icon="@drawable/ic_analyze"
+            android:title="분석" />
+    </group>
+
+    <item android:title="Social">
+        <menu>
+            <item
+                android:id="@+id/nav_email"
+                android:icon="@drawable/ic_email"
+                android:title="메일쓰기" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="공유" />
+        </menu>
+    </item>
+
+</menu>
