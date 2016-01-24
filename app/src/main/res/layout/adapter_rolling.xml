@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_roll"
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:orientation="horizontal">
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp" />
+    <org.hyochan.godlotto.utils.android.RollingItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/roll_item_1" />
+    <org.hyochan.godlotto.utils.android.RollingItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/roll_item_2" />
+    <org.hyochan.godlotto.utils.android.RollingItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/roll_item_3" />
+    <org.hyochan.godlotto.utils.android.RollingItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/roll_item_4" />
+    <org.hyochan.godlotto.utils.android.RollingItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/roll_item_5" />
+    <org.hyochan.godlotto.utils.android.RollingItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/roll_item_6" />
+</LinearLayout>

@@ -26,6 +26,11 @@ public class NumGenerator
         return numGenerator;
     }
 
+    public static NumGenerator getNewInstance()
+    {
+        return new NumGenerator();
+    }
+
     public int[] generate()
     {
         Random random = new Random();

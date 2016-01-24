@@ -11,9 +11,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 
-import org.hyochan.godlotto.utils.android.RollingItem;
+import org.hyochan.godlotto.adpaters.RollingAdapter;
+import org.hyochan.godlotto.data.RollingData;
 import org.hyochan.godlotto.utils.java.NumGenerator;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
@@ -25,12 +29,10 @@ public class MainActivity extends AppCompatActivity
     private DrawerLayout drawer;
     private NavigationView navView;
 
-    private RollingItem rollingItem1;
-    private RollingItem rollingItem2;
-    private RollingItem rollingItem3;
-    private RollingItem rollingItem4;
-    private RollingItem rollingItem5;
-    private RollingItem rollingItem6;
+    private ListView listRoll;
+    private RollingAdapter adapterRolling;
+    private ArrayList<RollingData> arrRolling;
+
     private Button btnRoll;
 
     @Override
@@ -50,12 +52,16 @@ public class MainActivity extends AppCompatActivity
         navView.setNavigationItemSelectedListener(this);
 
         // content main
-        rollingItem1 = (RollingItem) findViewById(R.id.roll_item_1);
-        rollingItem2 = (RollingItem) findViewById(R.id.roll_item_2);
-        rollingItem3 = (RollingItem) findViewById(R.id.roll_item_3);
-        rollingItem4 = (RollingItem) findViewById(R.id.roll_item_4);
-        rollingItem5 = (RollingItem) findViewById(R.id.roll_item_5);
-        rollingItem6 = (RollingItem) findViewById(R.id.roll_item_6);
+        arrRolling = new ArrayList<>();
+        for(int i=0; i<5; i++){
+            arrRolling.add(new RollingData(NumGenerator.getNewInstance().generate()));
+        }
+
+        adapterRolling = new RollingAdapter(this, arrRolling);
+
+        listRoll = (ListView) findViewById(R.id.list_roll);
+        listRoll.setAdapter(adapterRolling);
+
         btnRoll = (Button) findViewById(R.id.btn_roll);
         btnRoll.setOnClickListener(this);
 
@@ -65,15 +71,10 @@ public class MainActivity extends AppCompatActivity
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_roll:
-
-                int numbers[] = NumGenerator.getInstance().generate();
-
-                rollingItem1.roll(numbers[0]);
-                rollingItem2.roll(numbers[1]);
-                rollingItem3.roll(numbers[2]);
-                rollingItem4.roll(numbers[3]);
-                rollingItem5.roll(numbers[4]);
-                rollingItem6.roll(numbers[5]);
+                for(int i=0; i<adapterRolling.getCount(); i++){
+                    arrRolling.set(i, new RollingData(NumGenerator.getNewInstance().generate()));
+                }
+                adapterRolling.notifyDataSetChanged();
                 break;
         }
     }

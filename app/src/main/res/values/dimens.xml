@@ -9,4 +9,6 @@
     <!-- button -->
     <dimen name="btn_radius">5dp</dimen>
     <dimen name="btn_stroke">1dp</dimen>
+    <!-- rolling item -->
+    <dimen name="roll_item_size">45dp</dimen>
 </resources>
